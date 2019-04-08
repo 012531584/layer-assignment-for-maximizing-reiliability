@@ -1,0 +1,34 @@
+Layer:
+L1(17):M4 M5 A2 M8;
+L2(17):D1 D3;
+L3(17):M1 M2 A3 M7;
+L4(17):A1 M3 M6 M10;
+L5(17):D2 M9 A5 A4;
+END;
+
+Resource Area:
+M:5;
+A:2;
+D:8;
+END;
+
+Dependency:
+M1 -> M2;
+M1 -> M4;
+M2 -> A1;
+A1 -> M3;
+M3 -> M6;
+M6 -> M10;
+M10 -> M9;
+M10 -> A5;
+M9 -> D2;
+A5 -> A4;
+M4 -> M5;
+M5 -> A2;
+M5 -> D1;
+A2 -> M8;
+D1 -> A3;
+D1 -> D3;
+A3 -> M7;
+M7 -> D3;
+END;

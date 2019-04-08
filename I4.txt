@@ -1,0 +1,44 @@
+Layer:
+L1(25):D1 M9 A5 D4 A7;
+L2(25):M7 D2 M11 A8 M13;
+L3(25):M1 M2 A1 M5 M6;
+L4(25):M3 M4 A2 A3 M8 M10;
+L5(25):A4 D3 A6 M12 D5;
+END;
+
+Resource Area:
+M:5;
+A:2;
+D:8;
+END;
+
+Dependency:
+M1 -> M2;
+M1 -> M5;
+M2 -> A1;
+A3 -> M3;
+M3 -> M4;
+M3 -> M7;
+M4 -> A2;
+M4 -> M8;
+M8 -> A4;
+A4 -> M12;
+M8 -> D3;
+D3 -> D5;
+D3 -> A6;
+A6 -> M12;
+M12 -> D5;
+M7 -> M13;
+M13 -> A8;
+A8 -> A7;
+M13 -> M11;
+M11 -> D2;
+M5 -> M6;
+M6 -> A3;
+A3 -> M10;
+M6 -> D1;
+D1 -> D2;
+D1 -> A5;
+A5 -> M9;
+M9 -> D4;
+END;

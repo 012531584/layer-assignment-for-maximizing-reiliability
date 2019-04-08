@@ -1,0 +1,26 @@
+Layer:
+L1(12):M1 M2 A1;
+L2(12):M3 M5 A3;
+L3(12):D2;
+L4(12):M4 A2 M6;
+L5(12):D1;
+END;
+
+Resource Area:
+M:5;
+A:2;
+D:8;
+END;
+
+Dependency:
+M1 -> M2;
+M1 -> M3;
+M2 -> A1;
+M3 -> M5;
+M5 -> A3;
+M5 -> D2;
+A3 -> M6;
+D2 -> D1;
+D1 -> M4;
+M4 -> A2;
+END;
